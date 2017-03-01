@@ -31,9 +31,9 @@ Build an up-to-date and pre-built ubuntu image for rapid development environment
 
 ```sh
 git clone git@github.com:nijikokun/docker-ubuntu-image.git
-cd docker-ubuntu-base
+cd docker-ubuntu-image
 cp ~/.ssh/id_rsa id_rsa
-docker build -t ubuntu-base .
+docker build -t ubuntu-image .
 ```
 
 **Note** This will copy your `id_rsa` from `~/.ssh` into the cloned directory. I have added rules to the `.gitignore` to prevent 
@@ -42,7 +42,7 @@ pushing of your private keys, however make sure to double check before publishin
 ## Usage
 
 ```dockerfile
-FROM ubuntu-base
+FROM ubuntu-image
 ```
 
 ## License
