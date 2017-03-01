@@ -29,7 +29,7 @@ EOL
 echo "==> Installing NVM"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 echo 'export NVM_DIR="$HOME/.nvm" ; [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm' >> /etc/profile
-. /root/.profile
+source /etc/profile
 
 echo "==> Installing Node Versions"
 nvm install 4.4
@@ -48,7 +48,7 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 curl -sSL https://get.rvm.io | bash -s stable --ruby=2.3.3
 echo 'gem: --no-ri --no-rdoc' > ~/.gemrc
 echo "source /usr/local/rvm/scripts/rvm" >> /etc/profile
-source /root/.profile
+source /etc/profile
 rvm use 2.3.3
 gem install bundler
 
