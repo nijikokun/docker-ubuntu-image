@@ -5,6 +5,7 @@ Build an up-to-date and pre-built ubuntu image for rapid development environment
 ## Features
 
 - Up-to-date APT sources & packages
+- Pre-configured maximum `ulimit`
 - Pre-configured SSH credentials
 - Gem installed configured with `no-ri` and `no-rdoc`
 - Git, Node, Ruby pre-installed
