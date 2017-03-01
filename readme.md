@@ -30,7 +30,7 @@ Build an up-to-date and pre-built ubuntu image for rapid development environment
 ## Building
 
 ```sh
-git clone gh:nijikokun/docker-ubuntu-base
+git clone git@github.com:nijikokun/docker-ubuntu-image.git
 cd docker-ubuntu-base
 cp ~/.ssh/id_rsa id_rsa
 docker build -t ubuntu-base .
